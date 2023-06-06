@@ -1,0 +1,43 @@
+.leaders {
+  background: #303030;
+  color: #f7c678;
+
+  .title {
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+  }
+
+  .leaders-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-content: space-around;
+    padding-block: 2rem;
+    padding-inline: 7%;
+
+    > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    .img {
+      width: 175px;
+      height: 175px;
+      border-radius: 50%;
+      background-color: white;
+      align-self: center;
+    }
+
+    .name {
+      font-size: 1.75rem;
+    }
+
+    .function {
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+}

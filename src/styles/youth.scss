@@ -1,0 +1,52 @@
+.youth {
+  background-color: #303030;
+
+  .hero h1 {
+    transform: translateY(50%);
+  }
+
+  .youth-container {
+    padding-inline: 20%;
+
+    hr {
+      width: 40%;
+      margin-inline: 30%;
+      margin-block: 1.25rem;
+    }
+
+    .quote {
+      text-align: center;
+
+      h1 {
+        color: #f7c678;
+      }
+
+      h4 {
+        color: white;
+        font-size: 1.25rem;
+        margin-top: 20px;
+      }
+    }
+
+    > img {
+      width: 100%;
+      margin-block: 30px;
+      cursor: pointer;
+      border-radius: 15px;
+      border: 1px solid white;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .youth-container {
+    padding-inline: 5% !important;
+    font-size: 0.75rem !important;
+
+    > iframe {
+      width: 96vw;
+      transform: translateX(-3vw);
+      box-shadow: unset;
+    }
+  }
+}
