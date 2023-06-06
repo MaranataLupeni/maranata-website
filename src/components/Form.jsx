@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Spinner from "react-bootstrap/Spinner";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import ImageComponent from "./ImageComponent";
 import emailjs from "@emailjs/browser";
 
 import img from "../assets/images/logo-text-black.png";
@@ -71,7 +71,10 @@ const Form = (props) => {
         </button>
       </div>
 
-      <LazyLoadImage src={img} className="form-img" alt="Image Alt" />
+      <ImageComponent
+        src={img}
+        hash=";KS6PlWBxuxu-;xuofayofofofj[j[ayj[j[WBWB~qWBRjj[M{WBWBj[WBxuRjWBayj[WBayt7t7M{xuofM{M{WBofoffQayt7ofWBWBofofRjRjRjM{ayt7xuj[WBayof%MRjWBt7j[WBWBofof"
+      />
 
       <form onSubmit={submitPrayerForm}>
         {shownInputs === 1 && (
