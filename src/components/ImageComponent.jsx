@@ -28,7 +28,7 @@ const ImageComponent = (props) => {
           punch={1}
         />
       ) : (
-        <img src={src} {...props} />
+        <img src={src} onClick={props?.onClick} className={props?.className} />
       )}
     </>
   );
