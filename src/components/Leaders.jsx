@@ -3,6 +3,8 @@ import Hero from "./Hero";
 import bgImage from "../assets/images/leaders.jpg";
 import "../styles/leaders.scss";
 
+import leaders from "../utils/leaders";
+
 const Leaders = () => {
   return (
     <div className="leaders">
@@ -10,25 +12,29 @@ const Leaders = () => {
       <div>
         <h1 className="title">Liderii nostri</h1>
         <div className="leaders-container">
-          <div className="leader-card">
-            <span className="img"></span>
-            <span className="name">Nemes Daniel</span>
-            <span className="function">Pastor</span>
-          </div>
-          <div className="leader-card">
-            <span className="img"></span>
-            <span className="name">Liviu Corseanschi</span>
-            <span className="function">Prezbiter</span>
-          </div>
-          <div className="leader-card">
-            <span className="img"></span>
-            <span className="name">Lorem Ipsum</span>
-            <span className="function">dominus dolore</span>
-          </div>
+          {leaders.map((leader) => (
+            <LeaderCard
+              imgID={leader.imgID}
+              name={leader.name}
+              role={leader.role}
+            />
+          ))}
         </div>
+        <img
+          src="https://drive.google.com/uc?export=view&id=1L0kPmKO_zAEEaRoDxrjjACmXnforKXhU"
+          alt=""
+        />
       </div>
     </div>
   );
 };
+
+const LeaderCard = (props) => (
+  <div className="leader-card">
+    <img src={props.imgID} alt="" className="img" />
+    <span className="name">{props.name}</span>
+    <span className="role">{props.role}</span>
+  </div>
+);
 
 export default Leaders;
