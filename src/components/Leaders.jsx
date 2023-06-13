@@ -1,4 +1,5 @@
 import Hero from "./Hero";
+import ImageComponent from "./ImageComponent";
 
 import bgImage from "../assets/images/leaders.jpg";
 import "../styles/leaders.scss";
@@ -17,6 +18,7 @@ const Leaders = () => {
               imgID={leader.imgID}
               name={leader.name}
               role={leader.role}
+              hash={leader.hash}
             />
           ))}
         </div>
@@ -31,7 +33,7 @@ const Leaders = () => {
 
 const LeaderCard = (props) => (
   <div className="leader-card">
-    <img src={props.imgID} alt="" className="img" />
+    <ImageComponent src={props.imgID} className="img" hash={props.hash} />
     <span className="name">{props.name}</span>
     <span className="role">{props.role}</span>
   </div>
