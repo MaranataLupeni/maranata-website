@@ -57,9 +57,3 @@
 .card:hover {
   transform: scale(1.025);
 }
-
-@media screen and (max-width: 450px) {
-  .desktop-cards {
-    display: none !important;
-  }
-}
