@@ -45,7 +45,7 @@ const Live = () => {
           <div className="not-live">
             <h1>Nu suntem live</h1>
             <h2>
-              Vom fi live în fiecare Duminică la orele 9:00 și{" "}
+              Vom fi live în fiecare Duminică la orele 10:00 și{" "}
               {!dst ? "17:00" : "18:00"}, și de asemenea vom fi live cu orice
               ocazie specială, anunțată și în cadrul bisericii.
             </h2>
