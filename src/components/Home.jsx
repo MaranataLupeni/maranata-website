@@ -6,12 +6,11 @@ import Hero from "./Hero";
 import "react-multi-carousel/lib/styles.css";
 import cards from "../utils/cards";
 import bgImage from "../assets/images/hands.png";
-import "../styles/card.scss";
+import "../styles/cards.scss";
 
 const Home = (props) => {
   const { handleFormPurpose, handleFormOpen, showDots } = props;
   const [isMobile, setIsMobile] = useState(false);
-  console.log(showDots);
 
   const responsive = {
     mobile: {
@@ -38,27 +37,30 @@ const Home = (props) => {
       <Hero bgImage={bgImage} home text={"MARANATA DOMNUL NOSTRU VINE"} />
 
       <div className="card-container">
-        <div className="desktop-cards">
-          {cards.map((card) => (
-            <Card
-              key={card.id}
-              img={card.img}
-              link={card.link}
-              topText={card.topText}
-              bottomText={card.bottomText}
-              handleFormOpen={handleFormOpen}
-              handleFormPurpose={handleFormPurpose}
-            />
-          ))}
-        </div>
-        <div className="mobile-cards">
-          <Carousel
-            responsive={responsive}
-            infinite={true}
-            showDots={showDots ? true : false}
-            dir="utd"
-            className="cards-carousel"
-          >
+        {isMobile ? (
+          <div className="mobile-cards">
+            <Carousel
+              responsive={responsive}
+              infinite={true}
+              showDots={showDots ? true : false}
+              dir="utd"
+              className="cards-carousel"
+            >
+              {cards.map((card) => (
+                <Card
+                  key={card.id}
+                  img={card.img}
+                  link={card.link}
+                  topText={card.topText}
+                  bottomText={card.bottomText}
+                  handleFormOpen={handleFormOpen}
+                  handleFormPurpose={handleFormPurpose}
+                />
+              ))}
+            </Carousel>
+          </div>
+        ) : (
+          <div className="desktop-cards">
             {cards.map((card) => (
               <Card
                 key={card.id}
@@ -70,8 +72,8 @@ const Home = (props) => {
                 handleFormPurpose={handleFormPurpose}
               />
             ))}
-          </Carousel>
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );
