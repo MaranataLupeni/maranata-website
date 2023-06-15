@@ -68,7 +68,7 @@ const Menu = (props) => {
         <button
           className="rugaciune"
           onClick={() => {
-            handleMenuOpen(false);
+            handleMenuOpen(true);
             handleFormPurpose("prayer");
             handleFormOpen(true);
           }}
@@ -92,7 +92,7 @@ const Menu = (props) => {
         <button
           className="contact"
           onClick={() => {
-            handleMenuOpen(false);
+            handleMenuOpen(true);
             handleFormPurpose("contact");
             handleFormOpen(true);
           }}
