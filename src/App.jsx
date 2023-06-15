@@ -68,6 +68,7 @@ const App = () => {
               : "Cu ce te putem ajuta?"
           }
           handleFormOpen={handleFormOpen}
+          handleMenuOpen={handleMenuOpen}
         />
       )}
       <Routes>
