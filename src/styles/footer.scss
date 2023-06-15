@@ -105,3 +105,16 @@ footer {
     transform: scale(1.1);
   }
 }
+
+@media screen and (max-width: 450px) {
+  .logo-motto {
+    img {
+      width: 150% !important;
+    }
+
+    h2 {
+      font-size: larger !important;
+      white-space: nowrap;
+    }
+  }
+}
