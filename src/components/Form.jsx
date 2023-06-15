@@ -8,7 +8,7 @@ import "../styles/form.scss";
 import "animate.css";
 
 const Form = (props) => {
-  const { formPurpose, placeholder, handleFormOpen } = props;
+  const { formPurpose, placeholder, handleFormOpen, handleMenuOpen } = props;
 
   const [formData, setFormData] = useState({
     prayerReq: "",
@@ -63,6 +63,7 @@ const Form = (props) => {
             form.classList.remove("animate__slideInRight");
             form.classList.add("animate__slideOutRight");
 
+            handleMenuOpen(false);
             setTimeout(() => handleFormOpen(false), 600);
           }}
           style={{ color: "#757575", cursor: "pointer" }}
