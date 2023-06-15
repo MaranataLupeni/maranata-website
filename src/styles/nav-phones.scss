@@ -2,16 +2,15 @@
   width: 100vw;
   box-sizing: border-box !important;
   overflow: hidden;
-  height: 100px;
+  height: 120px;
   padding: 2rem 1rem;
   position: relative;
   color: white;
   background: transparent;
   position: absolute;
-  z-index: 10;
 
-  img {
-    width: 220px;
+  > img {
+    width: 275px;
     margin-inline: auto;
     margin-block: 1rem;
   }
