@@ -38,9 +38,8 @@ const History = () => {
           Din partea autorităţilor au fost prezenţi domnul primar Abalaşei Gheorghe, viceprimarul Bucur Nicolae şi şeful de birou urbanism Mogoş Gheorghe. La festivitate a cântat famfara de la Biserica Gloria Bujac din Arad şi corul Bisericii Maranata Lupeni dirijat de fratele Mesaroş Iacob care a fost şi administrator la construcţia Bisericii.
           În ultimii ani au fost aduse multe îmbunătăţiri la clădire.
 
+          </p>
           <ol>
-            
-          </ol>
             <li>1. s-au schimbat geamurile şi uşile cu termopane;</li>
             <li>2. s-a montat lambriuri pe boltă şi casa scării;</li>
             <li>3. s-a pus gresie şi faianţă nouă la grupurile sanitare;</li>
