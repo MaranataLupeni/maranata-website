@@ -3,3 +3,9 @@
   background-color: #303030;
   color: white;
 }
+
+@media screen and (max-width: 450px) {
+  .history-container {
+    padding-inline: 5%;
+  }
+}
