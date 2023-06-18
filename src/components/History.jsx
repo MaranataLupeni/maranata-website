@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 
 import bgImage from "../assets/images/history.jpg";
+import "../styles/history.scss";
 
 const History = () => {
   return (
