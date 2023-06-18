@@ -45,28 +45,24 @@ const History = () => {
             <li>2. s-a montat lambriuri pe boltă şi casa scării;</li>
             <li>3. s-a pus gresie şi faianţă nouă la grupurile sanitare;</li>
             <li>4. s-a executat reţelele de stingere a incendiilor;</li>
-            <li>5.	s-au schimbat băncile cu scaune tapiţate;</li>
-            <li>6.	s-a schimbat mocheta;</li>7.	s-a montat aer condiţionat.
+            <li>5. s-au schimbat băncile cu scaune tapiţate;</li>
+            <li>6. s-a schimbat mocheta;</li>
+            <li>7. s-a montat aer condiţionat.</li>
           </ol>
-
-              Pentru realizarea acestor obiective a fost nevoie de bani şi forţă de muncă. Fratele Mesaroş Iacob a apelat în numele Bisericii la toate autorităţile competente care puteam ajuta legal aceste lucrări. 
-
-              Mulţumim pe această cale Consiliului Judeţean Hunedoara şi personal domnului preşedinte Ioan Mircea Moloţ pentru fondurile alocate de la Consiliul Judeţean pentru realizarea acestor obiective. 
-
-              Mulţumim domnului deputat Cristian Resmeriţă care a avut un rol important pentru obţinerea unui sprijin financiar de la Secretariatul de Stat pentru Culte pentru schimbarea băncilor cu scaune tapiţate. Mulţumim domnului primar Resmeriţă Cornel şi Consiliului Local Lupeni pentru ajutorul financiar acordat Bisericii Maranata. 
-
-              La aceste lucrări au contribuit şi fraţii din Germania şi cei din Anglia. 
-
-              Mulţumim totodată tuturor fraţilor de pretutindeni care au sprijinit lucrarea Domnului de la Lupeni, în mod deosebit fratelui Mesaroş Gheorghe care a fost prezent la toate lucrările ce au avut loc la Biserica Maranata Lupeni. 
-
-              Menţionăm faptul că fratele pastor Mesaroş Gheorghe a condus Biserica Penticostală din Lupeni din 1969 şi până în decembrie 2011, când a fost scos la pensie de către conducerea cultului la vârsta de 73 de ani. În prezent fratele Mesaroş Gheorghe slujeşte la Lupeni ca pastor pensionar bucurându-se de respect din partea tuturor fraţilor şi surorilor. 
-
-Dorim să amintim pe toţi cei care au slujit şi slujesc în Adunarea Penticostală din Lupeni:
+          <p>
+            Pentru realizarea acestor obiective a fost nevoie de bani şi forţă de muncă. Fratele Mesaroş Iacob a apelat în numele Bisericii la toate autorităţile competente care puteam ajuta legal aceste lucrări.
+            Mulţumim pe această cale Consiliului Judeţean Hunedoara şi personal domnului preşedinte Ioan Mircea Moloţ pentru fondurile alocate de la Consiliul Judeţean pentru realizarea acestor obiective.
+            Mulţumim domnului deputat Cristian Resmeriţă care a avut un rol important pentru obţinerea unui sprijin financiar de la Secretariatul de Stat pentru Culte pentru schimbarea băncilor cu scaune tapiţate. Mulţumim domnului primar Resmeriţă Cornel şi Consiliului Local Lupeni pentru ajutorul financiar acordat Bisericii Maranata.
+            La aceste lucrări au contribuit şi fraţii din Germania şi cei din Anglia.
+            Mulţumim totodată tuturor fraţilor de pretutindeni care au sprijinit lucrarea Domnului de la Lupeni, în mod deosebit fratelui Mesaroş Gheorghe care a fost prezent la toate lucrările ce au avut loc la Biserica Maranata Lupeni.
+            Menţionăm faptul că fratele pastor Mesaroş Gheorghe a condus Biserica Penticostală din Lupeni din 1969 şi până în decembrie 2011, când a fost scos la pensie de către conducerea cultului la vârsta de 73 de ani. În prezent fratele Mesaroş Gheorghe slujeşte la Lupeni ca pastor pensionar bucurându-se de respect din partea tuturor fraţilor şi surorilor. 
+          </p>
+        <h2>Dorim să amintim pe toţi cei care au slujit şi slujesc în Adunarea Penticostală din Lupeni:</h2>
         <ul>
           <li>Pastor Jurj Nicolae</li>
           <li>Diacon Bera Iosif</li>
           <li>Pastor Greţa Alexa</li>
-          <li></li>Diacon Avramescu Dumitru</li>
+          <li>Diacon Avramescu Dumitru</li>
           <li>Pastor Mesaroş Gheorghe</li>
           <li>Diacon Ungur Vasile</li>
           <li>Diacon Cirţ Vasile</li>
