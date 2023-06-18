@@ -4,10 +4,8 @@
   color: white;
   padding-block: 1rem;
 
-  p {
-    span::first-letter {
-      margin-left: 1rem;
-    }
+  span::first-letter {
+    margin-left: 1rem;
   }
 }
 
