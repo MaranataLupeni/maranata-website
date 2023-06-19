@@ -211,9 +211,10 @@
     right: 0;
     width: calc(100vw - 80px);
     height: calc(100vh - 80px);
+    border-radius: 0;
   }
 
   .controls {
-    transform: translateY(-150%) !important;
+    transform: translateY(-300%) !important;
   }
 }
