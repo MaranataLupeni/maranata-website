@@ -39,8 +39,26 @@ const Kids = () => {
         </p>
       </div>
       <div className="verses-images">
-        <img src={luke} alt="Luca 18:16" />
-        <img src={proverbs} alt="Proverbe 22:6" />
+        <img
+          src={luke}
+          alt="Luca 18:16"
+          onClick={() =>
+            window.open(
+              "https://www.bible.com/ro/bible/191/luk.18.16.vdc",
+              "_blank"
+            )
+          }
+        />
+        <img
+          src={proverbs}
+          alt="Proverbe 22:6"
+          onClick={() =>
+            window.open(
+              "https://www.bible.com/ro/bible/191/pro.22.6.vdc",
+              "_blank"
+            )
+          }
+        />
       </div>
     </div>
   );
