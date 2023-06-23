@@ -5,6 +5,8 @@ import "react-awesome-lightbox/build/style.css";
 import ImageComponent from "./ImageComponent";
 
 import bgImage from "../assets/images/kids.jpg";
+import luke from "../assets/images/luke-18-16.png";
+import proverbs from "../assets/images/proverbs-22-06.png";
 import kids from "../utils/kids";
 import "../styles/kids.scss";
 
@@ -36,31 +38,9 @@ const Kids = () => {
           îl aduci la una din grupele bisericii Maranata.
         </p>
       </div>
-      <div className="verses">
-        <div className="verse">
-          <h1 style={{ fontSize: "1.75rem" }}>
-            Învață pe <span style={{ color: "white" }}>copil</span> calea pe
-            care trebuie s-o urmeze, și când va îmbătrâni,{" "}
-            <span style={{ color: "white" }}>nu se va abate</span> de la ea.
-          </h1>
-          <h4>
-            <em>Proverbe 22:6</em>
-          </h4>
-        </div>
-        <div className="verse">
-          <h1 style={{ fontSize: "1.75rem" }}>
-            Isus a chemat la Sine pe{" "}
-            <span style={{ color: "white" }}>copilași</span> și a zis: „Lăsați
-            copilașii să vină la Mine și nu-i opriți, căci{" "}
-            <span style={{ color: "white" }}>
-              Împărăția lui Dumnezeu este a unora ca ei
-            </span>
-            .
-          </h1>
-          <h4>
-            <em>Luca 18:16</em>
-          </h4>
-        </div>
+      <div className="verses-images">
+        <img src={luke} alt="Luca 18:16" />
+        <img src={proverbs} alt="Proverbe 22:6" />
       </div>
     </div>
   );
