@@ -71,6 +71,10 @@
     height: 60vh;
   }
 
+  .hero:has(h1[class="home-hero-text"]) {
+    background-position: 68% center;
+  }
+
   .home-hero-text {
     font-size: 30px !important;
   }
