@@ -5,28 +5,23 @@
     transform: translateY(50%);
   }
 
+  .youth-verse {
+    height: 400px;
+    width: 100vw;
+    background-image: url("../assets/images/youth-verse.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-size: 130%;
+      cursor: pointer;
+    }
+  }
+
   .youth-container {
     padding-inline: 20%;
-
-    hr {
-      width: 40%;
-      margin-inline: 30%;
-      margin-block: 1.25rem;
-    }
-
-    .quote {
-      text-align: center;
-
-      h1 {
-        color: #f7c678;
-      }
-
-      h4 {
-        color: white;
-        font-size: 1.25rem;
-        margin-top: 20px;
-      }
-    }
 
     > img {
       width: 100%;
