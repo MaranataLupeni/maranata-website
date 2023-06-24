@@ -15,17 +15,16 @@ const Youth = () => {
   return (
     <div className="youth">
       <Hero bgImage={bgImage} text="Tineret" />
+      <div
+        className="youth-verse"
+        onClick={() =>
+          window.open(
+            "https://www.bible.com/ro/bible/191/PSA.110.3.VDC",
+            "_blank"
+          )
+        }
+      ></div>
       <div className="youth-container">
-        <div className="quote">
-          <hr />
-          <h1>
-            "Poporul Tău este plin de înflăcărare când Îți aduni oștirea; cu
-            podoabe sfinte, ca din sânul zorilor, vine{" "}
-            <u style={{ color: "white" }}>tineretul</u> Tău la Tine, ca roua."
-          </h1>
-          <h4>Psalmul 110:3</h4>
-          <hr />
-        </div>
         {isOpened && (
           <Lightbox images={youth} onClose={() => setIsOpened(false)} />
         )}
