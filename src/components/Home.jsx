@@ -5,7 +5,7 @@ import Hero from "./Hero";
 
 import "react-multi-carousel/lib/styles.css";
 import cards from "../utils/cards";
-import bgImage from "../assets/images/hands.png";
+import bgImage from "../assets/images/home-bg.png";
 import "../styles/cards.scss";
 
 const Home = (props) => {
