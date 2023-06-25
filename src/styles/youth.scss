@@ -34,6 +34,14 @@
 }
 
 @media all and (max-width: 600px) {
+  .youth-verse {
+    background-size: cover;
+
+    &:hover {
+      background-size: cover
+    }
+  }
+  
   .youth-container {
     padding-inline: 5% !important;
     font-size: 0.75rem !important;
