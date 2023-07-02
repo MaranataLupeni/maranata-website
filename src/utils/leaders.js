@@ -9,13 +9,13 @@ const leaders = [
   },
   {
     name: "Corșeanschi Liviu",
-    role: "Preazbiter",
+    role: "Prezbiter",
     imgID: baseURL + "1x3manrggKanStYUXuWetGb_o0GrsjKKO",
     hash: "LXGbn;f5.8oz~pofo}j[E1kCMxWB",
   },
   {
     name: "Stan Samuel",
-    role: "Preazbiter",
+    role: "Prezbiter",
     imgID: baseURL + "15C9z6RMlE4NVHLNWQ5w6SrOSEmGbqUGs",
     hash: "LPFr#3oL?^t7?boft7ayE2kCROWB",
   },
@@ -33,7 +33,7 @@ const leaders = [
   },
   {
     name: "Sămărtinean Claudiu",
-    role: "Preazbiter",
+    role: "Prezbiter",
     imgID: baseURL + "1OScrkIxzc6HwTav4Y-eHdUBrECfQLRJS",
     hash: "LJEyY+af?^of~os:x]kC9akCMwV@",
   },
