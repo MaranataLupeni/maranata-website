@@ -1,0 +1,47 @@
+.youth {
+  background-color: #303030;
+
+  .hero h1 {
+    transform: translateY(50%);
+  }
+
+  .youth-verse {
+    height: 400px;
+    width: 100vw;
+    background-image: url("../assets/images/youth-verse.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-size: 130%;
+      cursor: pointer;
+    }
+  }
+
+  .youth-container {
+    padding-inline: 20%;
+
+    > img {
+      width: 100%;
+      margin-block: 30px;
+      cursor: pointer;
+      border-radius: 15px;
+      border: 1px solid white;
+    }
+  }
+}
+
+@media all and (max-width: 600px) {
+  .youth-container {
+    padding-inline: 5% !important;
+    font-size: 0.75rem !important;
+
+    > iframe {
+      width: 96vw;
+      transform: translateX(-3vw);
+      box-shadow: unset;
+    }
+  }
+}

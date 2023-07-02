@@ -1,0 +1,120 @@
+.live {
+  padding-bottom: 50px;
+  background-color: #303030;
+
+  .hero {
+    background-position-y: 10% !important;
+
+    h1 {
+      transform: translateY(-60%);
+    }
+  }
+
+  .live-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 20%;
+    background-color: #303030;
+    background-image: url("../assets/images/crown-of-thorns.png");
+    background-position: -15% 50%;
+    background-size: 26%;
+    background-repeat: no-repeat;
+
+    .button-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      button {
+        appearance: none;
+        outline: none;
+        border: none;
+        color: black;
+        background: white;
+        padding: 1rem 0.75rem;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        margin-inline: 7.5%;
+
+        a {
+          text-align: center;
+          text-decoration: none;
+          color: black;
+          font-size: 1.15rem;
+          width: 12ch !important;
+        }
+
+        i {
+          font-size: 1.45rem;
+          margin-inline: 15px;
+          transition: all 0.2s ease-in-out;
+          margin: 0;
+          margin-left: 5px;
+        }
+      }
+    }
+
+    button:hover i {
+      transform: scale(1.15);
+      box-sizing: border-box;
+    }
+
+    .not-live {
+      color: #878787;
+      text-align: center;
+      padding: 4rem 2rem;
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23878787FF' stroke-width='10' stroke-dasharray='15%2c 15%2c 1' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        margin-top: 40px;
+        font-size: 1rem;
+        padding-inline: 5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .live-container {
+    padding-inline: 5% !important;
+    width: 90vw !important;
+    padding: 0;
+
+    button {
+      margin-inline: 2.5% !important;
+      margin-bottom: 0 !important;
+      transform: translateY(20%) !important;
+    }
+
+    > span {
+      display: none;
+    }
+
+    iframe {
+      width: 90vw !important;
+      height: 50vw;
+      margin-inline: 0;
+      padding: 0;
+      margin-block: 30px;
+    }
+  }
+
+  .not-live {
+    // aspect-ratio: 16 / 9 !important;
+    padding: 0.65rem 0.75rem !important;
+
+    h2 {
+      padding-inline: 0.5rem !important;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "OpenSans Bold";
+  src: url("../assets/fonts/OpenSans-ExtraBold.ttf");
+}
+
+.history-container {
+  background-color: #303030;
+  background-image: url("../assets/images//cross.png");
+  background-position: 120% 50%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding-inline: 20%;
+  padding-bottom: 20px;
+  letter-spacing: -0.1px;
+
+  iframe {
+    box-shadow: none;
+    border-radius: 10px;
+    width: 90%;
+    margin-inline: 5%;
+    height: 100vh;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    color: #f7c678;
+    font-size: 36px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .history-container {
+    padding-inline: 5%;
+
+    h2 {
+      padding-top: 20px;
+      font-size: 22px;
+      text-align: center;
+    }
+  }
+}
