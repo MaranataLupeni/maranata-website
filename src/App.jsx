@@ -9,6 +9,7 @@ import Live from "./components/Live.jsx";
 import Kids from "./components/Kids.jsx";
 import History from "./components/History.jsx";
 import Leaders from "./components/Leaders.jsx";
+import Events from "./components/Events.jsx";
 import Youth from "./components/Youth.jsx";
 
 import Navbar from "./components/Navbar.jsx";
@@ -84,6 +85,7 @@ const App = () => {
         />
 
         <Route path="/locatie" element={<Location />} />
+        <Route path="/evenimente" element={<Events />} />
         <Route path="/slujbe" element={<Sermons />} />
         <Route path="/live" element={<Live />} />
         <Route path="/grupa-duminicala" element={<Kids />} />
