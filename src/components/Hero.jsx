@@ -15,9 +15,9 @@ const Hero = (props) => {
     >
       {text && <h1 className={home && "home-hero-text"}>{text}</h1>}
 
-      {home && (
+{/*       {home && (
         <iframe src="https://www.youtube.com/embed/g1bDotfajFI?autohide=1&autoplay=1&controls=0&enablejsapi=1&iv_load_policy=3&loop=1&modestbranding=0&playsinline=1&rel=0&showinfo=0&wmode=opaque&mute=1&origin=https%3A%2F%2Fauthenticchurch.com&widgetid=1" />
-      )}
+      )} */}
 
       {home && (
         <div className="home-info">
