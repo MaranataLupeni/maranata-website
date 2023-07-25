@@ -16,6 +16,20 @@
     text-align: center;
   }
 
+  iframe {
+    z-index: -10;
+    border-radius: unset;
+    border: 0;
+    position: absolute;
+    width: 100vw;
+    aspect-ratio: 16 / 9;
+    margin: 0;
+
+    &:hover {
+      box-shadow: unset;
+    }
+  }
+
   table {
     font-weight: bold;
     font-size: 1.5rem;
