@@ -9,7 +9,7 @@ import bgImage from "../assets/images/home-bg.jpg";
 import "../styles/cards.scss";
 
 const Home = (props) => {
-  const { handleFormPurpose, handleFormOpen, showDots } = props;
+  const { handleFormPurpose, handleFormOpen } = props;
   const [isMobile, setIsMobile] = useState(false);
 
   const responsive = {
@@ -41,8 +41,7 @@ const Home = (props) => {
           <div className="mobile-cards">
             <Carousel
               responsive={responsive}
-              infinite={true}
-              showDots={showDots ? true : false}
+              infinite
               dir="utd"
               className="cards-carousel"
             >
