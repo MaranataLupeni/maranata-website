@@ -34,16 +34,21 @@ const actionsDropdownSecond = [
     text: "Locație",
     link: "/locatie",
   },
+  {
+    id:6,
+    text: "Evenimente",
+    link: "/evenimente"
+  },
 ];
 
 const actionsDropdownThird = [
   {
-    id: 6,
+    id: 7,
     text: "Slujbe",
     link: "/slujbe",
   },
   {
-    id: 7,
+    id: 8,
     text: "Live",
     link: "/live",
   },
