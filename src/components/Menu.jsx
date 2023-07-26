@@ -46,6 +46,11 @@ const actions = [
     text: "Credință",
     link: "/credinta",
   },
+  {
+    id: 9,
+    text: "Evenimente",
+    link: "/evenimente",
+  },
 ];
 
 const Menu = (props) => {
