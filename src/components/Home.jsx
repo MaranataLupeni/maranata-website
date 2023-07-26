@@ -34,7 +34,7 @@ const Home = (props) => {
 
   return (
     <div>
-      <Hero bgImage={bgImage} home text={"MARANATA DOMNUL NOSTRU VINE"} />
+      <Hero bgImage={bgImage} home />
 
       <div className="card-container">
         {isMobile ? (
