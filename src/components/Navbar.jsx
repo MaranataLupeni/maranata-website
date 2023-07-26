@@ -35,9 +35,9 @@ const actionsDropdownSecond = [
     link: "/locatie",
   },
   {
-    id:6,
+    id: 6,
     text: "Evenimente",
-    link: "/evenimente"
+    link: "/evenimente",
   },
 ];
 
@@ -87,7 +87,7 @@ const Navbar = (props) => {
           navigate(`/`);
         }}
         style={{
-          width: logoVisible ? "150px" : "0",
+          width: logoVisible ? "130px" : "0",
           marginInline: logoVisible ? "-5px" : "0",
         }}
       />
