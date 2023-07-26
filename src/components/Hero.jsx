@@ -1,144 +1,43 @@
-import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import "../styles/hero.scss";
 
-import logo from "../assets/images/logo.png";
-import "../styles/navbar.scss";
-import "../styles/dropdown.scss";
+import hasDST from "../utils/hasDST";
 
-const actionsDropdownFirst = [
-  {
-    id: 1,
-    text: "Tineret",
-    link: "/tineret",
-  },
-  {
-    id: 2,
-    text: "Grupa Duminicală",
-    link: "/grupa-duminicala",
-  },
-];
-
-const actionsDropdownSecond = [
-  {
-    id: 3,
-    text: "Istoric",
-    link: "/istoric",
-  },
-  {
-    id: 4,
-    text: "Lideri",
-    link: "/lideri",
-  },
-  {
-    id: 5,
-    text: "Locație",
-    link: "/locatie",
-  },
-  {
-    id: 6,
-    text: "Evenimente",
-    link: "/evenimente",
-  },
-];
-
-const actionsDropdownThird = [
-  {
-    id: 7,
-    text: "Slujbe",
-    link: "/slujbe",
-  },
-  {
-    id: 8,
-    text: "Live",
-    link: "/live",
-  },
-];
-
-const Navbar = (props) => {
-  const { handleFormPurpose, handleFormOpen } = props;
-
-  const [logoVisible, setLogoVisible] = useState(true);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setLogoVisible(window.scrollY < 50);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+const Hero = (props) => {
+  const { bgImage, home, text } = props;
+  const dst = hasDST();
 
   return (
-    <header className="desktop-navbar">
-      <nav>
-        <Dropdown text="Grupuri" actions={actionsDropdownFirst} />
-        <Dropdown text="Despre noi" actions={actionsDropdownSecond} />
-        <Dropdown text="Live" actions={actionsDropdownThird} />
-      </nav>
-      <img
-        src={logo}
-        alt="Maranata Lupeni"
-        id="logo"
-        onClick={() => {
-          navigate(`/`);
-        }}
-        style={{
-          width: logoVisible ? "130px" : "0",
-          marginInline: logoVisible ? "-5px" : "0",
-        }}
-      />
-      <nav>
-        <Link
-          onClick={() => {
-            handleFormOpen(true);
-            handleFormPurpose("prayer");
-          }}
-          className="nav-link"
-        >
-          Rugăciune
-        </Link>
-        <Link
-          to="/credinta"
-          className="nav-link"
-          onClick={() => window.scrollTo(0, 0)}
-        >
-          Credință
-        </Link>
-        <Link
-          onClick={() => {
-            handleFormOpen(true);
-            handleFormPurpose("contact");
-          }}
-          className="nav-link"
-        >
-          Contact
-        </Link>
-      </nav>
-    </header>
-  );
-};
+    <div
+      className="hero"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+      }}
+    >
+      {text && <h1 className={home && "home-hero-text"}>{text}</h1>}
 
-const Dropdown = (props) => {
-  const { actions, text } = props;
+{/*       {home && (
+        <iframe src="https://www.youtube.com/embed/g1bDotfajFI?autohide=1&autoplay=1&controls=0&enablejsapi=1&iv_load_policy=3&loop=1&modestbranding=0&playsinline=1&rel=0&showinfo=0&wmode=opaque&mute=1&origin=https%3A%2F%2Fauthenticchurch.com&widgetid=1" />
+      )} */}
 
-  return (
-    <div className="dropdown">
-      <div className="nav-link">{text}</div>
-      <ul className="menu">
-        {actions.map((action) => (
-          <li key={action.id}>
-            <Link to={action.link} onClick={() => window.scrollTo(0, 0)}>
-              {action.text}
-            </Link>
-          </li>
-        ))}
-      </ul>
+      {home && (
+        <div className="home-info">
+          <h2>MARANATA DOMNUL NOSTRU VINE</h2>
+          <table cellSpacing={0}>
+            <tbody>
+              <tr>
+                <td>Duminică 9:00 | {!dst ? "17:00" : "18:00"}</td>
+                <td>Joi {!dst ? "17:00" : "18:00"}</td>
+              </tr>
+              <tr>
+                <td>Marți 18:00</td>
+                <td>Vineri 18:00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      )}
     </div>
   );
 };
 
-export default Navbar;
+export default Hero;
