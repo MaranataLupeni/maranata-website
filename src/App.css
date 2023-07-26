@@ -39,6 +39,22 @@ iframe:hover {
   box-shadow: 15px 10px 15px #f7c678;
 }
 
+.home-info {
+  border-radius: 10px;
+  background: #303030;
+  text-align: center;
+  padding: 25px 50px;
+  box-shadow: 0 0.4rem 1.8rem 0 rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50%);
+}
+
+.home-info h2 {
+  margin-bottom: 20px;
+  font-size: 1.75rem;
+}
+
 @media screen and (max-width: 1171px) {
   .desktop-navbar {
     display: none;
