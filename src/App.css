@@ -67,6 +67,19 @@ iframe:hover {
     box-shadow: unset !important;
   }
 
+  .home-info {
+    padding: 15px;
+  }
+
+  .home-info h2 {
+    font-size: 1rem;
+  }
+
+  tr {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   footer {
     flex-direction: column;
     align-items: center;
