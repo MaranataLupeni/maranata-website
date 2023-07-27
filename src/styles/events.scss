@@ -93,3 +93,32 @@
     }
   }
 }
+
+@media screen and (max-width: 500px) {
+  .events {
+    flex-direction: column;
+  }
+
+  .carousel-container {
+    width: 95%;
+
+    li {
+      max-height: 350px;
+
+      img {
+        max-height: unset;
+        max-width: 100vw !important;
+        width: 100vw !important;
+      }
+    }
+  }
+
+  .events-cards {
+    width: 90vw !important;
+
+    .event {
+      max-width: 90vw !important;
+      width: 90vw !important;
+    }
+  }
+}
