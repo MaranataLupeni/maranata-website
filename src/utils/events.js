@@ -4,7 +4,7 @@ const events = [
     name: "Botez Nou Testamental",
     date: "30.07.2023",
     description:
-      "Cu autorul Domnului 15 suflete au incheiat un legamant cu Dumnezeu.",
+      "Cu ajutorul Domnului 15 suflete au încheiat un legământ cu Dumnezeu.",
     pictures: [
       "1UA7UDs3l0uEeCVRpKVAmgckP5f62T05R",
       "11CghGdSD94pNLFj41OYU0Vc6OKfqPrPu",
@@ -16,7 +16,7 @@ const events = [
     id: 2,
     name: "Aniversarea de 30 de ani",
     date: "05.08.2023",
-    description: "Sarbatorim 30 de ani de la infiintarea Bisericii.",
+    description: "Sărbătorim 30 de ani de la înființarea Bisericii.",
     pictures: [
       "1V4Ntf4B0VJoEg5h5T7M4Alwp0Fa9_379",
       "1j8uG7kHoF1ABvJcirD8Sgj39YF41l02g",
