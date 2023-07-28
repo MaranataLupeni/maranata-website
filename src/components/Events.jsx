@@ -6,7 +6,7 @@ import Hero from "./Hero";
 
 import "react-awesome-lightbox/build/style.css";
 import "react-multi-carousel/lib/styles.css";
-import bgImage from "../assets/images/beliefs.jpg";
+import bgImage from "../assets/images/events.png";
 import events from "../utils/events.js";
 
 import "../styles/events.scss";
