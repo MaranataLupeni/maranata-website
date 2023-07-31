@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import Lightbox from "react-awesome-lightbox";
-import Carousel from "react-multi-carousel";
 import ImageComponent from "./ImageComponent";
 import Hero from "./Hero";
 
 import "react-awesome-lightbox/build/style.css";
-import "react-multi-carousel/lib/styles.css";
 import bgImage from "../assets/images/events.png";
 import events from "../utils/events.js";
 
@@ -44,16 +42,18 @@ const Events = () => {
     <div className="events-container">
       <Hero bgImage={bgImage} text={"Evenimente"} />
       <div className="events">
-        <Carousel
-          responsive={responsive}
-          dir="utd"
-          containerClass="carousel-container event-images"
-        >
-          {selectedEvent.pictures.map((image, i) => {
-            console.log(baseURL + image);
-            return <img src={baseURL + image} key={i} />;
-          })}
-        </Carousel>
+        {isOpened && (
+          <Lightbox
+            images={selectedEvent.pictures}
+            onClose={() => setIsOpened(false)}
+          />
+        )}
+        <ImageComponent
+          src={selectedEvent.pictures[0].url}
+          hash={"LPIO8}yD?a?b~VIAM{W;%hnjM{Rj"}
+          onClick={() => setIsOpened(true)}
+          className="event-img"
+        />
         <div className="events-cards">
           {events.map((event, i) => (
             <div
