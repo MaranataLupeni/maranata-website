@@ -23,11 +23,6 @@ const baptism2023 = [
     description: "",
   },
   {
-    url: baseURL + "1HrEBpnO1P20Y2t6IO7HLSCKzcdjBgdws",
-    title: commonTitle,
-    description: "",
-  },
-  {
     url: baseURL + "1Id7Kzie4w-MQmgc9J_FagmIXWkW7pLF2",
     title: commonTitle,
     description: "",
