@@ -4,7 +4,7 @@ import Hero from "./Hero";
 import ImageComponent from "./ImageComponent";
 
 import bgImage from "../assets/images/location.jpeg";
-import churchOverview from "../assets/images/church-overview.jpg";
+import churchOverview from "../assets/images/church-overview1.jpeg";
 import "../styles/location.scss";
 import hasDST from "../utils/hasDST";
 
