@@ -36,8 +36,8 @@ const actionsDropdownSecond = [
   },
   {
     id: 6,
-    text: "Evenimente",
-    link: "/evenimente",
+    text: "Credință",
+    link: "/credinta",
   },
 ];
 
@@ -102,11 +102,11 @@ const Navbar = (props) => {
           Rugăciune
         </Link>
         <Link
-          to="/credinta"
+          to="/evenimente"
           className="nav-link"
           onClick={() => window.scrollTo(0, 0)}
         >
-          Credință
+          Evenimente
         </Link>
         <Link
           onClick={() => {
