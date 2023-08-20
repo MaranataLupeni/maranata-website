@@ -84,6 +84,7 @@
   .hero {
     height: 60vh;
     background-size: 100%;
+    background-color: #303030
   }
 
   .hero:has(h1[class="home-hero-text"]) {
