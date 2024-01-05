@@ -29,34 +29,23 @@ const Live = () => {
     <div className="live">
       <Hero bgImage={bgImage} />
       <div className="live-container">
-        <div className="button-container">
-          <button>
-            <a
-              href="https://www.youtube.com/@bisericamaranatalupeni9430"
-              target={"_blank"}
-            >
-              ABONEAZA-TE
-            </a>
-            <i className="fa-regular fa-circle-right" />
-          </button>
-          <button>
-            <a
-              href="https://www.youtube.com/@bisericamaranatalupeni9430"
-              target={"_blank"}
-            >
-              YOUTUBE
-            </a>
-            <i className="fa-brands fa-youtube" />
-          </button>
-        </div>
+        <button>
+          <a
+            href="https://www.youtube.com/@bisericamaranatalupeni9430"
+            target={"_blank"}
+          >
+            ABONEAZA-TE
+          </a>
+          <i className="fa-regular fa-circle-right" />
+        </button>
 
         {isLive ? (
           <YouTube videoId={liveId} />
         ) : (
           <div className="not-live">
-            <h1>Nu suntem live</h1>
+            <h1>Nu suntem Live</h1>
             <h2>
-              Vom fi live în fiecare Duminică la orele 10:00 și{" "}
+              Vom fi Live în fiecare Duminică la orele 9:00 și{" "}
               {!dst ? "17:00" : "18:00"}, și de asemenea vom fi live cu orice
               ocazie specială, anunțată și în cadrul bisericii.
             </h2>
