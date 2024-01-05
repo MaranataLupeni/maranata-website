@@ -1,6 +1,8 @@
-import "../styles/hero.scss";
+import { useEffect } from "react";
 
 import hasDST from "../utils/hasDST";
+import announcements from "../utils/announcements";
+import "../styles/hero.scss";
 
 const Hero = (props) => {
   const { bgImage, home, text } = props;
@@ -19,6 +21,13 @@ const Hero = (props) => {
       programContainer.style.pointerEvents = "unset"
     }
   }
+
+  useEffect(() => {
+    const hero = document.querySelector(".hero")
+    console.log(window.location.pathname)
+    if (window.location.pathname !== "/evenimente")
+      hero.style.backgroundColor = "#303030"
+  }, [])
 
   return (
     <div
@@ -46,26 +55,26 @@ const Hero = (props) => {
             </table>
           </div>
       )}
-      {home && (
+      {(home && announcements.length) && (
         <div className="announcements">
           <div className="buttons-container">
             <button onClick={() => changeTab()}>Program</button>
             <button onClick={() => changeTab()}>Anunțuri</button>
           </div>
           <div className="txt-container">
-            <h1>Conferință de Tineret</h1>
-            <p>Alătură-te nouă pentru a petrece o seară în prezența lui Dumnezeu, sau poate pentru a-L cunoaște pentru prima oară. Vino așa cum eșți, dar nu-ți putem garanta că vei pleca la fel 😊. Vom avea ca invitat pe Sorin Donțu, și de asemenea ai ocazia să cunoști persoane noi ✨, iubitoare ❤️, din tot județul 🗺️. P.S: la final... 🍔🥪☕🥤</p>
+            <h1>{announcements[0].title}</h1>
+            <p>{announcements[0].description}</p>
 
             <span>
               <i className="fa-solid fa-location-dot"></i>
               <a href="https://www.google.com/maps/place/Biserica+Maranata/@45.3500689,23.1999991,15z/data=!4m6!3m5!1s0x474de7f5aa3fb301:0x3282b13d09e46019!8m2!3d45.3500689!4d23.1999991!16s%2Fg%2F1vg6sj6j?entry=ttu">
-                Biserica Maranata, Lupeni ⛪
+                {announcements[0].location}
               </a>
             </span>
             <br />
             <span>
               <i className="fa-regular fa-clock"></i>
-              17:00
+              {announcements[0].dateTime}
             </span>
           </div>
         </div>
