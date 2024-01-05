@@ -1,74 +1,92 @@
 .events-container {
-  background-color: #303030;
-  color: rgb(163, 163, 163);
-
-  .events {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding-block: 30px;
-
-    > img {
-      width: 50%;
+    background-color: #303030;
+    color: rgb(163, 163, 163);
+  
+    .events {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-block: 30px;
+  
+      > img {
+        max-width: 50%;
+        max-height: 500px;
+      }
+  
+      .events-cards {
+        max-height: 450px;
+        height: 450px;
+        width: 35vw;
+        padding-block: 20px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        .event {
+          box-shadow: 0 0.4rem 1.8rem 0 rgba(0, 0, 0, 0.7);
+          border-radius: 20px;
+          padding-bottom: 10px;
+          max-width: 30vw;
+          width: 30vw;
+          margin-bottom: 20px;
+          cursor: pointer;
+  
+          > * {
+            padding-inline: 20px;
+            pointer-events: none;
+          }
+  
+          .date {
+            background-color: white;
+            text-align: center;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            padding-block: 5px;
+            font-size: 1.25rem;
+            color: #303030;
+          }
+  
+          .name {
+            font-size: 1.8rem;
+          }
+        }
+      }
+  
+      .selected-event {
+        filter: invert(100%);
+      }
+    }
+  }
+  
+  @media screen and (max-width: 500px) {
+    .hero {
+      background-color: transparent;
     }
 
-    .events-cards {
-      max-height: 450px;
-      height: 450px;
-      width: 35vw;
-      padding-block: 20px;
-      overflow-y: auto;
-      display: flex;
+    .events {
       flex-direction: column;
-      align-items: center;
+      transform: translateY(-90px);
 
-      .event {
-        box-shadow: 0 0.4rem 1.8rem 0 rgba(0, 0, 0, 0.7);
-        border-radius: 20px;
-        padding-bottom: 10px;
-        max-width: 30vw;
-        width: 30vw;
-        margin-bottom: 20px;
-        cursor: pointer;
+      > img {
+        max-height: unset;
+        max-width: unset !important; 
+        width: 90% !important;
+      }
 
-        > * {
-          padding-inline: 20px;
-          pointer-events: none;
-        }
-
-        .date {
-          background-color: white;
-          text-align: center;
-          border-top-left-radius: 15px;
-          border-top-right-radius: 15px;
-          padding-block: 5px;
-          font-size: 1.25rem;
-          color: #303030;
-        }
-
-        .name {
-          font-size: 1.8rem;
+      .events-cards {
+        width: 90vw !important;
+        flex-wrap: nowrap;
+    
+        .event {
+          max-width: 90vw !important;
+          width: 90vw !important;
+          
+          .name {
+            font-size: 1.6rem !important;
+          }
         }
       }
     }
-
-    .selected-event {
-      filter: invert(100%);
-    }
+    
   }
-}
-
-@media screen and (max-width: 500px) {
-  .events {
-    flex-direction: column;
-  }
-
-  .events-cards {
-    width: 90vw !important;
-
-    .event {
-      max-width: 90vw !important;
-      width: 90vw !important;
-    }
-  }
-}
