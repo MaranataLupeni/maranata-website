@@ -56,7 +56,7 @@ const Hero = (props) => {
             </table>
           </div>
 
-          (announcements[0].title.length &&
+          ((announcements[0].title.length !== 0) &&
             <div className="announcements">
               <div className="buttons-container">
                 <button onClick={() => changeTab()}>Program</button>
