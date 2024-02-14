@@ -39,6 +39,7 @@ const Hero = (props) => {
       {text && <h1 className={home && "home-hero-text"}>{text}</h1>}
 
       {home && (
+        <>
           <div className="program-container">
             <h2>MARANATA DOMNUL NOSTRU VINE</h2>
             <table cellSpacing={0}>
@@ -54,31 +55,34 @@ const Hero = (props) => {
               </tbody>
             </table>
           </div>
-      )}
-      {(home && announcements[0].title.length) && (
-        <div className="announcements">
-          <div className="buttons-container">
-            <button onClick={() => changeTab()}>Program</button>
-            <button onClick={() => changeTab()}>Anunțuri</button>
-          </div>
-          <div className="txt-container">
-            <h1>{announcements[0].title}</h1>
-            <p>{announcements[0].description}</p>
 
-            <span>
-              <i className="fa-solid fa-location-dot"></i>
-              <a href="https://www.google.com/maps/place/Biserica+Maranata/@45.3500689,23.1999991,15z/data=!4m6!3m5!1s0x474de7f5aa3fb301:0x3282b13d09e46019!8m2!3d45.3500689!4d23.1999991!16s%2Fg%2F1vg6sj6j?entry=ttu">
-                {announcements[0].location}
-              </a>
-            </span>
-            <br />
-            <span>
-              <i className="fa-regular fa-clock"></i>
-              {announcements[0].dateTime}
-            </span>
-          </div>
-        </div>
+          (announcements[0].title.length &&
+            <div className="announcements">
+              <div className="buttons-container">
+                <button onClick={() => changeTab()}>Program</button>
+                <button onClick={() => changeTab()}>Anunțuri</button>
+              </div>
+              <div className="txt-container">
+                <h1>{announcements[0].title}</h1>
+                <p>{announcements[0].description}</p>
+    
+                <span>
+                  <i className="fa-solid fa-location-dot"></i>
+                  <a href="https://www.google.com/maps/place/Biserica+Maranata/@45.3500689,23.1999991,15z/data=!4m6!3m5!1s0x474de7f5aa3fb301:0x3282b13d09e46019!8m2!3d45.3500689!4d23.1999991!16s%2Fg%2F1vg6sj6j?entry=ttu">
+                    {announcements[0].location}
+                  </a>
+                </span>
+                <br />
+                <span>
+                  <i className="fa-regular fa-clock"></i>
+                  {announcements[0].dateTime}
+                </span>
+              </div>
+            </div>
+          )
+        </>
       )}
+      
     </div>
   );
 };
