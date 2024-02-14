@@ -24,6 +24,10 @@ i {
   border: none;
 }
 
+.display-none {
+  display: none;
+}
+
 a:active {
   background-color: aqua;
 }
