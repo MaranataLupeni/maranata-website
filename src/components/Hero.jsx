@@ -23,8 +23,8 @@ const Hero = (props) => {
   }
 
   useEffect(() => {
-    if (announcements[0].title.length)
-      document.querySelector(".announcements").classList.remove("display-none")
+    // if (announcements[0].title.length)
+    //   document.querySelector(".announcements").classList.remove("display-none")
     const hero = document.querySelector(".hero")
     if (window.location.pathname !== "/evenimente")
       hero.style.backgroundColor = "#303030"
