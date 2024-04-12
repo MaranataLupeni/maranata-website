@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Blurhash } from "react-blurhash";
 import Hero from "./Hero";
-import ImageComponent from "./ImageComponent";
 
 import bgImage from "../assets/images/leaders.jpg";
 import "../styles/leaders.scss";
@@ -15,12 +14,13 @@ const Leaders = () => {
       <div>
         <h1 className="title">Liderii nostri</h1>
         <div className="leaders-container">
-          {leaders.map((leader) => (
+          {leaders.map((leader, i) => (
             <LeaderCard
               imgID={leader.imgID}
               name={leader.name}
               role={leader.role}
               hash={leader.hash}
+              key={i}
             />
           ))}
         </div>
@@ -72,7 +72,12 @@ const LeaderImageComponent = (props) => {
           punch={1}
         />
       ) : (
-        <img src={src} onClick={props?.onClick} className={props?.className} />
+        <img
+          src={src}
+          onClick={props?.onClick}
+          className={props?.className} 
+          alt="Lider"
+        />
       )}
     </>
   );
