@@ -1,9 +1,9 @@
-const baseURL = "https://drive.google.com/uc?export=view&id=";
+import img1 from "../assets/images/anniversary2023/1.jpg"
 const commonTitle = "Aniversarea a 30 de ani de la  înființarea Bisericii (2023)";
 
 const anniversary2023 = [
   {
-    url: baseURL + "1NDiK2OE7LXN9CBnVEGYD83UAXP3CdBSs",
+    url: img1,
     title: commonTitle,
     description: "",
   },
