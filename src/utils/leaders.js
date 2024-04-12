@@ -1,40 +1,46 @@
-const baseURL = "https://drive.google.com/uc?export=view&id=";
+import frNemes from "../assets/images/leaders/fr-nemes.png"
+import frLiviu from "../assets/images/leaders/fr-liviu.png"
+import frSami from "../assets/images/leaders/fr-sami.png"
+import frCornel from "../assets/images/leaders/fr-cornel.png"
+import frRaul from "../assets/images/leaders/fr-raul.png"
+import frClaudiu from "../assets/images/leaders/fr-claudiu.png"
+
 
 const leaders = [
   {
     name: "Nemes Daniel",
     role: "Pastor",
-    imgID: baseURL + "1JZeHet0fEbNUFKrIckVXuDeq_xMmgho0",
+    imgID: frNemes,
     hash: "LPG[yZjs%#of~poftlj]E1kCMdWB",
   },
   {
     name: "Corșeanschi Liviu",
     role: "Prezbiter",
-    imgID: baseURL + "1x3manrggKanStYUXuWetGb_o0GrsjKKO",
+    imgID: frLiviu,
     hash: "LXGbn;f5.8oz~pofo}j[E1kCMxWB",
   },
   {
     name: "Stan Samuel",
     role: "Prezbiter",
-    imgID: baseURL + "15C9z6RMlE4NVHLNWQ5w6SrOSEmGbqUGs",
+    imgID: frSami,
     hash: "LPFr#3oL?^t7?boft7ayE2kCROWB",
   },
   {
     name: "Zamfir Cornel",
     role: "Diacon",
-    imgID: baseURL + "1nAWFjq7_zUoNDbQ0aqCPcyC5a16izMgJ",
+    imgID: frCornel,
     hash: "LLFYleof?^of.7j[xuayE2j[Mxj@",
   },
   {
     name: "Matea Raul",
     role: "Secretar",
-    imgID: baseURL + "1BHw_XYTWW1FkuVL0gyovt4S8a-V6zwA7",
+    imgID: frRaul,
     hash: "LVHB-%of%$t7~paytRbHD*juR5ay",
   },
   {
     name: "Sămărtinean Claudiu",
     role: "Prezbiter",
-    imgID: baseURL + "1OScrkIxzc6HwTav4Y-eHdUBrECfQLRJS",
+    imgID: frClaudiu,
     hash: "LJEyY+af?^of~os:x]kC9akCMwV@",
   },
 ];
