@@ -1,59 +1,70 @@
-const baseURL = "https://drive.google.com/uc?export=view&id=";
+import img1 from "../assets/images/revelion-2024/1.jpg"
+import img2 from "../assets/images/revelion-2024/2.jpg"
+import img3 from "../assets/images/revelion-2024/3.jpg"
+import img4 from "../assets/images/revelion-2024/4.jpg"
+import img5 from "../assets/images/revelion-2024/5.jpg"
+import img6 from "../assets/images/revelion-2024/6.jpg"
+import img7 from "../assets/images/revelion-2024/7.jpg"
+import img8 from "../assets/images/revelion-2024/8.jpg"
+import img9 from "../assets/images/revelion-2024/9.jpg"
+import img10 from "../assets/images/revelion-2024/10.jpg"
+import img11 from "../assets/images/revelion-2024/11.jpg"
+
 const commonTitle = "Revelion 2024";
 
 const newYear2024 = [
   {
-    url: baseURL + "19wy_qkexvZsQp2aMSRbxJKuktQt8EM3f",
+    url: img1,
     title: commonTitle,
     description: "",
   },
   {
-    url: baseURL + "1AFhxjAdr1VW21cDWX24a2mcr5nw4A9A5",
+    url: img2,
     title: commonTitle,
     description: "",
   },
   {
-    url: baseURL + "1A7Rei8I60WazyoggTlSTmFA9QbJhnEqb",
+    url: img3,
     title: commonTitle,
     description: "",
   },
   {
-    url: baseURL + "19uUq_A2mJwk7zLN30uuYiblu8cCYkDdP",
+    url: img4,
     title: commonTitle,
     description: "",
   },
   {
-    url: baseURL + "19qg0radT1c5G_jI8rT4SnmeazMVR5hlr",
+    url: img5,
     title: commonTitle,
     description: "",
   },
   {
-    url: baseURL + "19i4bLs5agGgAofBtbhc8FUlLcNb-HCKx",
+    url: img6,
     title: commonTitle,
     description: "",
   },
   {
-    url: baseURL + "19eDcDkwS88_1QtoJQ3Yv2mmy94d4wyzv",
+    url: img7,
     title: commonTitle,
     description: "",
   },
   {
-    url: baseURL + "19a4BQAEmQc2bF0lzDrZKE8Ntk12sl112",
+    url: img8,
     title: commonTitle,
     description: "",
   },
   {
-    url: baseURL + "19ZuxEz2GoXNjN53SgO8hFwIWdOSd937q",
+    url: img9,
     title: commonTitle,
     description: "",
   },
   {
-    url: baseURL + "19VdNcGHZXpW6VjaARATo7wp5Dxaokc85",
+    url: img10,
     title: commonTitle,
     description: "",
   },
   {
-    url: baseURL + "19Ku9ccgnvsxtoi0caxdlw4fgcIEMv865",
+    url: img11,
     title: commonTitle,
     description: "",
   },
