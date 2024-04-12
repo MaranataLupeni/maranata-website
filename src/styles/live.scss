@@ -39,6 +39,7 @@
         cursor: pointer;
         position: relative;
         box-sizing: border-box;
+        text-decoration: none;
         margin-bottom: 20px;
         margin-inline: 7.5%;
 
@@ -117,4 +118,41 @@
       padding-inline: 0.5rem !important;
     }
   }
+}
+
+.live-button {
+    appearance: none;
+    outline: none;
+    border: none;
+    color: black;
+    background: white;
+    padding: 1rem 0.75rem;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    text-decoration: none;
+    margin-bottom: 20px;
+    margin-inline: 7.5%;
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      font-size: 1.15rem;
+      width: 12ch !important;
+    }
+
+    i {
+      font-size: 1.45rem;
+      margin-inline: 15px;
+      transition: all 0.2s ease-in-out;
+      margin: 0;
+      margin-left: 5px;
+    }
+
+    &:hover i {
+      transform: scale(1.15);
+      box-sizing: border-box;
+    }
 }
