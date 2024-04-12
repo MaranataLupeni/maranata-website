@@ -23,16 +23,17 @@ const Live = () => {
 
   useEffect(() => {
     fetchLive().then(() => console.log(liveId));
-  }, []);
+  });
 
   return (
     <div className="live">
       <Hero bgImage={bgImage} />
       <div className="live-container">
-        <button>
+        <button className="live-button">
           <a
             href="https://www.youtube.com/@bisericamaranatalupeni9430"
             target={"_blank"}
+            rel="noreferrer"
           >
             ABONEAZA-TE
           </a>
